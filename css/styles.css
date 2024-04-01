@@ -49,7 +49,7 @@ img{
 .container{
     max-width: 320px;
     padding: 0 16px;
-    /* margin: 0 auto; */
+    margin: 0 auto;
 }
 
 html.burger-opened,
@@ -926,10 +926,11 @@ html.modal-opened body {
 
 
 /* Adaptive */
+
 @media screen and (min-width: 768px){
 .button-burger{
     display: none;
-}
+    }
     .team-menu{
         gap: 64px 24px;
         flex-direction: row;
@@ -954,7 +955,7 @@ html.modal-opened body {
         flex-direction: row;
         justify-content: flex-start;
         gap:72px 24px;
-        padding-left: 108px;
+        /* padding-left: 108px; */
          }
     .footer-content {
         text-align: start;
@@ -1031,6 +1032,12 @@ html.modal-opened body {
     }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1157px){
+    .footer-container{
+        width: 584px;
+    }
+}
+
 
 @media screen and (min-width: 1158px){
     .section{
@@ -1063,7 +1070,7 @@ html.modal-opened body {
         transform: translateY(0%);
     }
     .footer-container {
-            
+        
         display: flex;
         flex-wrap: nowrap;
         align-items: baseline;
@@ -1113,6 +1120,10 @@ html.modal-opened body {
 
 @media only screen and (max-width: 767px) {
     .mobile-menu{
+        padding-left: 16px;
+        position: relative;
+        padding-top: 72px;
+        padding-bottom: 40px;
         display: flex;
         flex-direction: column;
         position: fixed;
@@ -1150,14 +1161,14 @@ html.modal-opened body {
         border-radius: 50%;
          
     }
-    .mobile-menu-container{
+    /* .mobile-menu-container{
         position: relative;
-        /* height: 100%; */
+        height: 100%;
         display: flex;
         flex-direction: column;
         padding-top: 72px;
         padding-bottom: 40px;
-    }
+    } */
     .mobile-nav-text { 
         margin-bottom: auto;
     }  
@@ -1221,7 +1232,7 @@ html.modal-opened body {
         display: flex;
         justify-content: center;
         gap: 40px;
-    
+        width: 280px;
     }
     .mobile-social-link-item{
         width: 280px;
